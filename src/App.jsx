@@ -4,11 +4,11 @@ import ItemListContainer from "./componentes/ItemListContainer/ItemListContainer
 
 export const App = () => {
   return (
-    <>
-    <NavBar/>
-    <CardWidget/>
-    <ItemListContainer/>
-    <h1>hola</h1>
-    </>
+    <header>
+      <NavBar/>
+      <ItemListContainer greeting={"¡Encontrá todo para tus preparaciones en un solo lugar!"}/>
+    </header>
   )
 }
+
+export default App;
