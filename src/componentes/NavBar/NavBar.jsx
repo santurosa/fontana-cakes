@@ -7,7 +7,7 @@ import './NavBar.css'
 
 const NavBar = () => {
     return (
-        <Navbar bg="white" expand="lg" className='nav'>
+        <Navbar bg="white" expand="lg" data-bs-theme="light"className='nav bg-body-tertiary'>
             <Container>
                 <Link to="/"><Navbar.Brand href="#"><img className='logo' src="../public/img/logo.png" alt="Fontana Cakes"/></Navbar.Brand></Link>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />

@@ -32,8 +32,8 @@ export const CarritoProvider = ({children}) => {
             setTotal(prev => prev + (item.precio * cantidad));
             // La sintaxis: prev prev, {item, cantidad}] Se utiliza para crear un nuevo array a partir del estado anterior del carrito (prev) y agregar un nuevo objeto que representa el nuevo producto.
         } else {
-            const carritoActualizado = carrito.map(prov => {
-                if(prev.item.id = item.id) {
+            const carritoActualizado = carrito.map(prod => {
+                if(prod.item.id = item.id) {
                     return {...prod, cantidad:prod.cantidad + cantidad}
                 } else {
                     return prod;

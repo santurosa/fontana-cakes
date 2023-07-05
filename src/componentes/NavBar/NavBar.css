@@ -5,6 +5,9 @@
 .nav{
     border-bottom: .5px black solid;
     color: black;
+    display: flex;
+    align-items: center;
+    
 }
 
 .categoria{
