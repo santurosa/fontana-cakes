@@ -2,11 +2,13 @@
     width: 30%;
 }
 
-.categorias{
-    font-weight: 700;
+.nav{
+    border-bottom: .5px black solid;
+    color: black;
 }
 
-.nav{
-    border-bottom: 20px !important;
-    color: black;
+.categoria{
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
 }
