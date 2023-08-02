@@ -1,5 +1,5 @@
 import NavBar from "./componentes/NavBar/NavBar";
-import Carousels from "./componentes/Carousels/Carousels";
+import Home from "./componentes/Home/Home";
 import ItemListContainer from "./componentes/ItemListContainer/ItemListContainer";
 import ItemDetailConteiner from "./componentes/ItemDetailConteiner/ItemDetailConteiner";
 import Cart from "./componentes/Cart/Cart";
@@ -14,9 +14,8 @@ export const App = () => {
       <BrowserRouter>
         <CarritoProvider>
           <NavBar/>
-          <Carousels/>
           <Routes>
-            <Route path="/" element={<ItemListContainer/>} />
+            <Route path="/" element={<Home/>} />
             <Route path="/categoria/:idCategoria" element={<ItemListContainer/>} />
             <Route path="/item/:idItem" element={<ItemDetailConteiner/>} />
             <Route path="/cart" element={<Cart/>} />

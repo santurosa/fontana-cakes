@@ -1,36 +1,37 @@
 import { Link } from 'react-router-dom';
+import Nav from 'react-bootstrap/Nav';
 import "./Footer.css"
 
 const Footer = () => {
   return (
-<footer>
-        <div className="container">
-          <div className="left-links">
-            <ul>
-              <li><a href="html/que_es_indesability.html">¿Qué es Indesability?</a></li>
-              <li><a href="html/blog.html">Blog</a></li>
-              <li><a href="html/sumate.html">Sumate</a></li>
-              <li><a href="html/contacto.html">Contacto</a></li>
-            </ul>
-          </div>
-          <div className="logo-center">
-            <img src="../public/img/logo.png" alt="Logo" />
-          </div>
-          <div className="right-links">
-            <li><a href="https://www.instagram.com/">
-                <i className="bi bi-instagram" /> Instagram</a></li>
-            <li><a href="https://www.facebook.com/">
-                <i className="bi bi-facebook" /> Facebook</a></li>
-            <li><a href="https://twitter.com/">
-                <i className="bi bi-twitter" /> Twitter</a></li>
-            <li><a href="mailto:info@indesability.com">
-                <i className="bi bi-envelope" /> info@indesability.com</a></li>
-          </div>
+    <footer>
+      <div className="container">
+        <div className="logo-center">
+          <img src="../public/img/logo-blanco.png" alt="Logo" width="60%" />
         </div>
-        <div className="copyright">
-          <p>© Fontana Cakes 2023. Todos los derechos reservados.</p>
+        <div className="left-links">
+          <ul>
+            <Link to="/categoria/chocolateria" className="links">Chocolateria</Link>
+            <Link to="/categoria/comestibles" className="links">Comestibles</Link>
+            <Link to="/categoria/decoracion" className="links">Decoración</Link>
+            <Link to="/categoria/descartables" className="links">Descartables</Link>
+            <Link to="/categoria/herramientas" className="links">Herramientas</Link>
+            <Link to="/categoria/moldes" className="links">Moldes</Link>
+            <Link to="/categoria/nuevo" className="links">¡LO NUEVO!</Link>
+          </ul>
         </div>
-      </footer>
+        <div className="right-links">
+          <Nav.Link><Link to="/categoria/showroom" className="links">¿Cómo Llegar?</Link></Nav.Link>
+          <Nav.Link><Link to="/categoria/cursos" className="links">Cursos</Link></Nav.Link>
+          <Nav.Link><Link to="/categoria/pago" className="links">Métodos de Pago</Link></Nav.Link>
+          <Nav.Link><Link to="/categoria/pyr" className="links">Preguntas Frecuentes</Link></Nav.Link>
+          <Nav.Link><Link to="/categoria/devolucion" className="links">Politicas de Devolución</Link></Nav.Link>
+        </div>
+      </div>
+      <div className="copyright">
+        <p>© Fontana Cakes 2023. Todos los derechos reservados.</p>
+      </div>
+    </footer>
   )
 }
 

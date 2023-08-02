@@ -1,21 +1,17 @@
-.logo{
-    width: 30%;
+.anuncio {
+    text-align: center;
+    background-color: #008dd0;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
 }
 
-.nav{
-    border-bottom: .5px black solid;
-    color: black;
-    display: flex;
-    align-items: center;
-    
+.texto-anuncio {
+    margin-bottom: 0 !important;
+    color: #fff;
+    font-weight: 700;
 }
-
-.categoria{
+.categoria {
     font-weight: 700;
     text-decoration: none;
     color: #000;
-}
-
-.inicio{
-    margin: 0 !important;
 }
